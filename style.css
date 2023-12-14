@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ff7a7a url(./assets/bg-intro-desktop.png) fixed center center;
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 100%;
+    text-align: center;
+    padding: 70px 10px;
+}
+
+#text {
+    margin-bottom: 60px;
+}
+
+h1, p {
+    color: #FFF;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+#text p {
+    font-size: 0.8rem;
+}
+
+#card>p {
+    background-color: #6055a5;
+    padding: 15px 50px;
+    border-radius: 0.5em;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+#card>p span {
+    font-weight: bold;
+}
+
+#cardForm {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 20px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 15px 20px;
+    border-radius: 0.3rem;
+}
+
+input {
+    border: 1px solid #b9b6d36e;
+    outline: none;
+    width: 100%;
+}
+
+input::placeholder {
+    font-weight: bold;
+}
+
+#button {
+    background-color: #38cc8c;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 0 #26b879;
+    padding: 15px 20px 10px 20px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #48da9b;
+}
+
+#button:active {
+    background-color: #26b879;
+    box-shadow: inset 0 3px #169c62;
+}
+
+#card p:last-child{
+    color: #b9b6d3;
+    font-size: 0.6rem;
+}
+
+#card p:last-child span {
+    color: #ff7a7a;
+    cursor: pointer;
+    font-weight: bold;
+}
+#card p span:hover {
+    text-decoration: underline;
+}
+
+#cardForm, #card>p {
+    box-shadow: 0 7px 0 #da6464c2;
+}
+
+.span {
+    text-align: end;
+}
+
+.error {
+    position: absolute;
+    width: 25px;
+    right: 25px;
+    transform: translateY(-150%);
+    margin-bottom: 30px;
+    display: none;
+}
+
+.errorMessage {
+    color: #ff7a7a;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #container {
+        flex-direction: row;
+        height: 500px;
+        width: 1050px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #text {
+        position: relative;
+        text-align: start;
+        width: 550px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #text p {
+        font-size: 1rem;
+        position: absolute;
+    }
+
+    #cardForm {
+        width: 450px;
+    }
+}
